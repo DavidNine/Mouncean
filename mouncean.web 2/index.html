@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="TW">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mouncean</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.3.2/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9.3.2/modules/scrollbar/scrollbar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--top header-->
+    <div class="container-fluid">
+      <div class="row bg-black">
+        <div class="col-5"></div>
+        <div class="col-2" style="display: flex; justify-content: center">
+          <a href="index.html">
+            <img
+              src="logo/logowhite.png"
+              class="img-fluid py-3"
+              alt=""
+              style="height: 65px"
+            />
+          </a>
+        </div>
+        <div class="col-3"></div>
+        <div class="col-xl-1 col-2" style="display: flex; align-items: center">
+          <div id="myNav" class="overlay">
+            <a
+              href="javascript:void(0)"
+              class="closebtn"
+              style="color: white"
+              onclick="closeNav()"
+              >&times;</a
+            >
+            <div class="overlay-content fs-3">
+              <a href="#">關於山海</a>
+              <div class="dropdown">
+                <a href="service.html" class="dropbtn dropdown-toggle"
+                  >調酒服務
+                </a>
+                <div class="dropdown-content">
+                  <a href="#">派對方案</a>
+                  <a href="#">婚禮方案</a>
+                  <a href="#">戶外調酒</a>
+                </div>
+              </div>
+              <a href="#">酒水選項</a>
+              <a href="record.html">活動紀錄</a>
+              <a href="#">商場介紹</a>
+              <div class="contactcontainer">
+                <div>
+                  <a href="#">
+                    <img src="contact/fb.png" class="img-fluid contact" alt=""
+                  /></a>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="contact/ig.png" class="img-fluid contact" alt=""
+                  /></a>
+                </div>
+                <div>
+                  <a href="#">
+                    <img
+                      src="contact/line.png"
+                      class="img-fluid contact"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span
+            style="
+              position: absolute;
+              font-size: 30px;
+              cursor: pointer;
+              color: white;
+              right: 10%;
+            "
+            onclick="openNav()"
+            >&#9776;
+          </span>
+
+          <script>
+            function openNav() {
+              document.getElementById("myNav").style.height = "100%";
+            }
+
+            function closeNav() {
+              document.getElementById("myNav").style.height = "0%";
+            }
+          </script>
+        </div>
+        <div
+          class="col-xl-1 col-0 d-xl-flex flex-content-center align-items-center d-none"
+        >
+          <a href="" class="fs-6" style="color: white; text-decoration: none">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--形象圖-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col p-0">
+          <img
+            src="heroimg/heroimg.png"
+            class="img-fluid d-md-block d-none"
+            alt=""
+          />
+          <img
+            src="heroimg/heroimg-phone.jpg"
+            class="img-fluid d-md-none d-block"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!--slogan-->
+    <h1 class="slogan fs-3">Be a Mouncean, Outdoor is Life.</h1>
+    <!--調酒服務連結-->
+    <a
+      href="service.html"
+      class="btn btn-light butten-service rounded-pill fs-5 border border-3 border-light d-xl-block d-none"
+      >調酒服務</a
+    >
+    <!--近期活動-->
+    <div class="container">
+      <div class="row py-5">
+        <div class="event">
+          <h2 class="fs-4">近期活動</h2>
+        </div>
+      </div>
+      <!--網頁版活動推播區-->
+      <div class=" swiper mySwiper">
+        <div class=" d-flex swiper-wrapper">
+          
+          <div class="card d-xl-block swiper-slide" >
+            <img
+            src="cardimg/cardimg1.jpg"
+            class="card-img-top img-fluid py-3"
+            alt="..."
+            />
+            
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim esse
+                accusantium doloremque unde quasi aliquam non sint illo ab,
+                perspiciatis sapiente accusamus dolore facilis totam.
+              </p>
+              <a href="#" class="btn btn-dark">查看詳情</a>
+            </div>
+          </div>
+          <div class="card d-xl-block swiper-slide" >
+            <img
+            src="cardimg/cardimg2.jpg"
+            class="card-img-top img-fluid py-3"
+            alt="..."
+            />
+            
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim esse
+                accusantium doloremque unde quasi aliquam non sint illo ab,
+                perspiciatis sapiente accusamus dolore facilis totam.
+              </p>
+              <a href="#" class="btn btn-dark">查看詳情</a>
+            </div>
+          </div>
+          <div class="card d-xl-block swiper-slide" >
+            <img
+            src="cardimg/cardimg3.jpg"
+            class="card-img-top img-fluid py-3"
+            alt="..."
+            />
+            
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim esse
+                accusantium doloremque unde quasi aliquam non sint illo ab,
+                perspiciatis sapiente accusamus dolore facilis totam.
+              </p>
+              <a href="#" class="btn btn-dark">查看詳情</a>
+            </div>
+          </div>
+          <div class="card d-xl-block swiper-slide" >
+            <img
+            src="cardimg/cardimg1.jpg"
+            class="card-img-top img-fluid py-3"
+            alt="..."
+            />
+            
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim esse
+                accusantium doloremque unde quasi aliquam non sint illo ab,
+                perspiciatis sapiente accusamus dolore facilis totam.
+              </p>
+              <a href="#" class="btn btn-dark">查看詳情</a>
+            </div>
+          </div>
+          <div class="card d-xl-block swiper-slide" >
+            <img
+            src="cardimg/cardimg2.jpg"
+            class="card-img-top img-fluid py-3"
+            alt="..."
+            />
+            
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim esse
+                accusantium doloremque unde quasi aliquam non sint illo ab,
+                perspiciatis sapiente accusamus dolore facilis totam.
+              </p>
+              <a href="#" class="btn btn-dark">查看詳情</a>
+            </div>
+          </div>
+          <div class="card d-xl-block swiper-slide" >
+            <img
+            src="cardimg/cardimg3.jpg"
+            class="card-img-top img-fluid py-3"
+            alt="..."
+            />
+            
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim esse
+                accusantium doloremque unde quasi aliquam non sint illo ab,
+                perspiciatis sapiente accusamus dolore facilis totam.
+              </p>
+              <a href="#" class="btn btn-dark">查看詳情</a>
+            </div>
+          </div>
+          <div class="card d-xl-block swiper-slide" >
+            <img
+            src="cardimg/cardimg1.jpg"
+            class="card-img-top img-fluid py-3"
+            alt="..."
+            />
+            
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim esse
+                accusantium doloremque unde quasi aliquam non sint illo ab,
+                perspiciatis sapiente accusamus dolore facilis totam.
+              </p>
+              <a href="#" class="btn btn-dark">查看詳情</a>
+            </div>
+          </div>
+          <div class="card d-xl-block swiper-slide" >
+            <img
+            src="cardimg/cardimg2.jpg"
+            class="card-img-top img-fluid py-3"
+            alt="..."
+            />
+            
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim esse
+                accusantium doloremque unde quasi aliquam non sint illo ab,
+                perspiciatis sapiente accusamus dolore facilis totam.
+              </p>
+              <a href="#" class="btn btn-dark">查看詳情</a>
+            </div>
+          </div>
+          <div class="card d-xl-block swiper-slide" >
+            <img
+            src="cardimg/cardimg3.jpg"
+            class="card-img-top img-fluid py-3"
+            alt="..."
+            />
+            
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim esse
+                accusantium doloremque unde quasi aliquam non sint illo ab,
+                perspiciatis sapiente accusamus dolore facilis totam.
+              </p>
+              <a href="#" class="btn btn-dark">查看詳情</a>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+       <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+    });
+  </script>
+        
+        <!--平板手機版活動推播區-->
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide d-xl-none d-block"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="cardimg/cardimg1.jpg" class="d-block w-100" alt="..." />
+            <div class="py-4">
+              <h5>Card title</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                tenetur quam laudantium accusamus nostrum laborum ab asperiores
+                vel pariatur nesciunt impedit ad provident explicabo
+                exercitationem, consectetur officiis illo voluptatem architecto!
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="cardimg/cardimg2.jpg" class="d-block w-100" alt="..." />
+            <div class="py-4">
+              <h5>Card title</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                tenetur quam laudantium accusamus nostrum laborum ab asperiores
+                vel pariatur nesciunt impedit ad provident explicabo
+                exercitationem, consectetur officiis illo voluptatem architecto!
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="cardimg/cardimg3.jpg" class="d-block w-100" alt="..." />
+            <div class="py-4">
+              <h5>Card title</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                tenetur quam laudantium accusamus nostrum laborum ab asperiores
+                vel pariatur nesciunt impedit ad provident explicabo
+                exercitationem, consectetur officiis illo voluptatem architecto!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slidebtn">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 py-5"></div>
+    <div class="col-12 py-2"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
